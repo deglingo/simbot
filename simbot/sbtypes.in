@@ -3,4 +3,5 @@
 namespace Sb
 {
   class Sim;
+  class Bot;
 }

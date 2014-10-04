@@ -1,0 +1,30 @@
+/* -*- c -*- */
+
+header
+{
+##include "simbot/sbbot.h"
+##include "simbot/sbsim.h"
+}
+
+data
+{
+  SbSim *sim;
+}
+
+setup
+{
+  l_trash_push();
+  data->sim = L_TRASH_OBJECT
+    (sb_sim_new());
+}
+
+teardown
+{
+  l_trash_pop();
+}
+
+test new
+{
+  SbBot *bot = L_TRASH_OBJECT
+    (sb_bot_new(data->sim));
+}

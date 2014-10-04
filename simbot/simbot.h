@@ -9,5 +9,7 @@
 
 #include "simbot/sbsim.h"
 
+#include "simbot/sbbot.h"
+
 
 #endif

@@ -9,16 +9,20 @@ include_HEADERS = \
 
 pkginclude_HEADERS = \
 	sbbase.h \
-	sbsim.h sbsim-def.h
+	sbsim.h sbsim-def.h \
+	sbbot.h sbbot-def.h
 
 libsimbot_la_SOURCES = \
 	sbbase.c \
-	sbsim.c
+	sbsim.c \
+	sbbot.c
 
 BUILT_SOURCES = \
-	sbsim-def.h sbsim.inl
+	sbsim-def.h sbsim.inl \
+	sbbot-def.h sbbot.inl
 
 sbsim-def.h sbsim.inl \
+sbbot-def.h sbbot.inl \
 : sbtypes.stamp-h
 
 sbtypes.stamp-h: sbtypes.in
