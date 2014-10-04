@@ -1,5 +1,15 @@
 /* -*- c -*- */
 
+header
+{
+##include "simbot/sbbase.h"
+}
+
+global_setup
+{
+  simbot_init();
+}
+
 test
 {
   PIF_CHECK(1);

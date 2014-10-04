@@ -8,7 +8,7 @@ modules =
 
 cflags = -DCL_LOG_DOMAIN=\"simbot-test\" -I@top_srcdir@ -I@top_builddir@ @PIFTEST_CFLAGS@ @LOS_CFLAGS@
 
-ldflags = @PIFTEST_LIBS@ @LOS_LIBS@
+ldflags = @top_builddir@/simbot/libsimbot.la @PIFTEST_LIBS@ @LOS_LIBS@
 
 extra_sources =
 
