@@ -28,6 +28,7 @@ struct _SbSimClass
 
 
 SbSim *sb_sim_new ( void );
+void sb_sim_update ( SbSim *sim );
 
 
 

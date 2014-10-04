@@ -14,3 +14,11 @@ SbSim *sb_sim_new ( void )
   sim = SB_SIM(l_object_new(SB_CLASS_SIM, NULL));
   return sim;
 }
+
+
+
+/* sb_sim_update:
+ */
+void sb_sim_update ( SbSim *sim )
+{
+}

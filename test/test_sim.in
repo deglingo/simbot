@@ -21,3 +21,10 @@ test new
     (sb_sim_new());
   PIF_CHECK(sim);
 }
+
+test update
+{
+  SbSim *sim = L_TRASH_OBJECT
+    (sb_sim_new());
+  sb_sim_update(sim);
+}
