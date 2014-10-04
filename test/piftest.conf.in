@@ -5,6 +5,7 @@ suite = simbot-test
 
 modules =
   test_base
+  test_sim
 
 cflags = -DCL_LOG_DOMAIN=\"simbot-test\" -I@top_srcdir@ -I@top_builddir@ @PIFTEST_CFLAGS@ @LOS_CFLAGS@
 
@@ -13,3 +14,5 @@ ldflags = @top_builddir@/simbot/libsimbot.la @PIFTEST_LIBS@ @LOS_LIBS@
 extra_sources =
 
 valgrind_supp_files =
+  @LOS_VGSUPPDIR@/glib.supp
+  @LOS_VGSUPPDIR@/los.supp
