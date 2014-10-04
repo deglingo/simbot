@@ -1,0 +1,3 @@
+#
+
+SUBDIRS = simbot test
