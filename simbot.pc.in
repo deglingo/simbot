@@ -1,0 +1,12 @@
+PACKAGE=@PACKAGE@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+includedir=@includedir@
+libdir=@libdir@
+
+Name: simbot
+Description: A robot simulation library
+Version: 0.0.0
+Requires: los
+Cflags: -I${includedir}
+Libs: -L${libdir} -lsimbot

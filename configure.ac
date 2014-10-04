@@ -3,6 +3,8 @@ AM_INIT_AUTOMAKE
 
 : ${CFLAGS:=-g -O0 -Wall}
 
+AC_SUBST([pkgconfigdir], ['${libdir}/pkgconfig'])
+
 AC_PROG_CC
 AM_PROG_CC_C_O
 LT_INIT
@@ -17,4 +19,5 @@ AC_CONFIG_FILES([ \
   simbot/Makefile \
   test/Makefile \
 ])
+AC_CONFIG_FILES([simbot.pc])
 AC_OUTPUT
