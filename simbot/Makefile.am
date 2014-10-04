@@ -4,6 +4,13 @@ lib_LTLIBRARIES = libsimbot.la
 
 libsimbot_la_CFLAGS = -I$(top_srcdir) -I$(top_builddir) @LOS_CFLAGS@
 
+include_HEADERS = \
+	simbot.h
+
+pkginclude_HEADERS = \
+	sbbase.h \
+	sbsim.h sbsim-def.h
+
 libsimbot_la_SOURCES = \
 	sbbase.c \
 	sbsim.c
